@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Summary Hub</h1>
+            <p>Your personal collection of text summaries</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="upload-section">
+            <h2>Add New Summary</h2>
+            <div class="upload-container">
+                <input type="file" id="file-input" accept=".txt" multiple>
+                <label for="file-input" class="upload-btn">Choose Files</label>
+                <button id="upload-btn" class="action-btn">Upload Summaries</button>
+            </div>
+        </section>
+
+        <section class="summaries-section">
+            <h2>Your Summaries</h2>
+            <div id="summaries-container" class="summaries-grid">
+                <!-- Summaries will be added here dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Summary Hub</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
