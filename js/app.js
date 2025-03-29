@@ -14,20 +14,17 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             filename: 'summaries/a2.txt',
             title: "Book Talk: How Chinese Tech Got Caught Up in an American Political Storm",
-            description: "An exploration of Huawei's rise, its role in US-China tensions, and how geopolitical conflict reshapes global tech competition.
-"
+            description: "An exploration of Huawei's rise, its role in US-China tensions, and how geopolitical conflict reshapes global tech competition."
         },
         {
             filename: 'summaries/a3.txt',
             title: "House of Huawei: The Secret History of China’s Most Powerful Company",
-            description: "An exploration of Huawei's rise under Ren Zhengfei, its controversial position at the heart of U.S.-China technology tensions, and its lasting geopolitical impact.
-"
+            description: "An exploration of Huawei's rise under Ren Zhengfei, its controversial position at the heart of U.S.-China technology tensions, and its lasting geopolitical impact."
         },
         {
             filename: 'summaries/a4.txt',
             title: "The Untold Story of the Mysterious Company That Shook the World",
-            description: "An examination of Huawei’s rise as China's tech giant, its controversial role in global surveillance, and the escalating geopolitical rivalry between the U.S. and China over technological dominance.
-"
+            description: "An examination of Huawei’s rise as China's tech giant, its controversial role in global surveillance, and the escalating geopolitical rivalry between the U.S. and China over technological dominance."
         },
         {
             filename: 'summaries/asean-china-export.txt',
