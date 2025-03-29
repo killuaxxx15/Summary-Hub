@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Get summary ID from URL
+    // Get file path from URL
     const urlParams = new URLSearchParams(window.location.search);
-    const summaryId = urlParams.get('id');
+    const filePath = urlParams.get('file');
     
-    if (!summaryId) {
-        // Redirect to home page if no ID is provided
+    if (!filePath) {
+        // Redirect to home page if no file is provided
         window.location.href = 'index.html';
         return;
     }
@@ -12,31 +12,40 @@ document.addEventListener('DOMContentLoaded', () => {
     // Get summary content container
     const summaryContent = document.getElementById('summary-content');
     
-    // Load summary from localStorage
-    loadSummary(summaryId);
+    // Load summary from file
+    loadSummary(filePath);
     
-    function loadSummary(id) {
-        const summaries = JSON.parse(localStorage.getItem('summaries')) || [];
-        const summary = summaries.find(s => s.id === id);
-        
-        if (!summary) {
+    async function loadSummary(filePath) {
+        try {
+            const response = await fetch(filePath);
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
+            const content = await response.text();
+            
+            // Extract title from first line
+            const title = content.split('\n')[0].trim();
+            
+            // Update page title
+            document.title = `${title} - Summary Hub`;
+            
+            // Format and display content
+            displaySummary(content);
+        } catch (error) {
+            console.error('Error loading summary:', error);
             summaryContent.innerHTML = `
-                <h1>Summary Not Found</h1>
-                <p>The summary you're looking for doesn't exist or has been removed.</p>
+                <h1>Error Loading Summary</h1>
+                <p>The summary file could not be loaded. It may have been moved or deleted.</p>
+                <p>Error: ${error.message}</p>
             `;
-            return;
         }
-        
-        // Update page title
-        document.title = `${summary.title} - Summary Hub`;
-        
-        // Format and display content
-        displaySummary(summary);
     }
     
-    function displaySummary(summary) {
+    function displaySummary(content) {
         // Parse the content
-        const formatted = formatContent(summary.content);
+        const formatted = formatContent(content);
         
         // Update the DOM
         summaryContent.innerHTML = formatted;
