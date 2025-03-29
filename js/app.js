@@ -7,6 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // You'll need to update this array when you add new summary files
     const summaryFiles = [
         {
+            filename: 'summaries/a1.txt',
+            title: "House of Huawei - The Secret History of China's Most Controversial Company (Book Summary)",
+            description: "An inside look at Huawei's rise, global ambitions, and its central role in US-China geopolitical tensions."
+        },
+        {
             filename: 'summaries/asean-china-export.txt',
             title: "ASEAN Caught Between China's Export Surge and Global De-Risking",
             description: "ASEAN faces mounting pressures due to Chinese industrial overcapacity and export surge."
