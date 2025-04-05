@@ -7,6 +7,31 @@ document.addEventListener('DOMContentLoaded', () => {
     // You'll need to update this array when you add new summary files
     const summaryFiles = [
         {
+            filename: 'summaries/a11.txt',
+            title: "Empire of Illusion: Frank Dikötter on Why China Isn’t a Superpower",
+            description: "Frank Dikötter challenges the myth of China as a superpower, exposing its internal weaknesses and authoritarian foundations."
+        },
+        {
+            filename: 'summaries/a10.txt',
+            title: "Naval Ravikant - 44 Harsh Truths About Human Nature",
+            description: "Naval Ravikant shares 44 raw truths on happiness, success, freedom, and mastering human nature."
+        },
+        {
+            filename: 'summaries/a9.txt',
+            title: "Trump Ushering a Reset",
+            description: "Exploring Trump’s reshoring, tariffs, and isolationism—and their long-term impact on global economics and investment."
+        },
+        {
+            filename: 'summaries/a8.txt',
+            title: "The Troubles: War in the Streets of Northern Ireland (Ep 1)",
+            description: "A powerful summary of how history, injustice, and identity ignited war in Northern Ireland’s streets."
+        },
+        {
+            filename: 'summaries/a7.txt',
+            title: "A Mind at Play: How Claude Shannon Invented the Information Age (Book Summary)",
+            description: "The story of how Claude Shannon’s curiosity and intellect revolutionized how we understand information."
+        },
+        {
             filename: 'summaries/a1.txt',
             title: "House of Huawei - The Secret History of China's Most Controversial Company (Book Summary)",
             description: "An inside look at Huawei's rise, global ambitions, and its central role in US-China geopolitical tensions."
