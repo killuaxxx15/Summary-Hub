@@ -7,6 +7,26 @@ document.addEventListener('DOMContentLoaded', () => {
     // You'll need to update this array when you add new summary files
     const summaryFiles = [
         {
+            filename: 'summaries/a15.txt',
+            title: "The Art of Selling Enterprise Software (with ServiceNow CEO Bill McDermott)",
+            description: "ServiceNow CEO Bill McDermott reveals the human-first, high-energy, no-excuses playbook behind building one of the world’s most powerful enterprise sales machines."
+        },
+        {
+            filename: 'summaries/a14.txt',
+            title: "TSMC Founder Morris Chang",
+            description: "Morris Chang shares the untold journey of founding TSMC, revealing hard-won lessons, bold bets, and legendary deals that shaped the global semiconductor industry."
+        },
+        {
+            filename: 'summaries/a13.txt',
+            title: "Ken Griffin: Founder of Citadel and Citadel Securities",
+            description: "Ken Griffin’s relentless rise from dorm-room trading to building a financial empire reveals the mindset, grit, and strategy of a founder who plays not just to win—but to dominate."
+        },
+        {
+            filename: 'summaries/a12.txt',
+            title: "Kishore Mahbubani REVEALS China's Strategy to Counter USA",
+            description: "Kishore Mahbubani exposes the stark contrast between China's calculated grand strategy and America's reactive approach in their global power struggle."
+        },
+        {
             filename: 'summaries/a11.txt',
             title: "Empire of Illusion: Frank Dikötter on Why China Isn’t a Superpower",
             description: "Frank Dikötter challenges the myth of China as a superpower, exposing its internal weaknesses and authoritarian foundations."
